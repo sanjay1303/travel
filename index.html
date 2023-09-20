@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel website</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- javascript -->
+    <script src="form.js"></script>
+    <!-- javascript -->
+
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- bootstrap -->
+
+<!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<!-- font -->
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<!-- google font -->
+
+</head>
+<body>
+
+<!-- navbar start     -->
+
+<nav class="navbar navbar-expand-lg " id="narbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span ><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#package">Package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallary">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- narbar end -->
+
+  <!-- home section start  -->
+
+  <div class="home">
+    <div class="content">
+        <h5>welcome to world</h5>
+        <h1>Visit <span class="changecontent"></span></h1>
+        <p>we are dedicated to curating exceptional travel experiences that inspire and delight.</p>
+        <a href="#book">book place</a>
+    </div>
+  </div>
+
+<!-- home section ends -->
+
+
+<!-- book start -->
+
+<section class="book" id="book">
+  <div class="container">
+    <div class="main-text">
+      <h1><span>B</span>ooking</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="images/book-img.png" alt="">
+        </div>        
+      </div>
+
+      <div class="col-md-6 py-3 py-md-0">
+        <form action="https://api.web3forms.com/submit" method="post" onsubmit="return validate()">
+          <input type="hidden" name="access_key" value="2913b581-c835-46d7-9d7f-afa516bef760">
+          <input type="text" class="form-control"  name="name"  id="name" pattern="[a-zA-Z0-9]+" placeholder="Enter Your Name" required><br>
+          <input type="text" class="form-control"  name="email" pattern="[^ @]*@[^ @]*"  id="email"placeholder="Enter Email ID" required><br>
+          <input type="text" class="form-control"  name="phone number" pattern="[1-9]{1}[0-9]{9}" id="mobile" placeholder="Enter phone numder" required><br>
+          <input type="text" class="form-control"  name="days"  placeholder="How Many" required><br>
+          <input type="date" class="form-control"  name="arrivals"  placeholder="Arrivals" required><br>
+          <input type="date" class="form-control"  name="leaving"  placeholder="Leaving" required><br>
+          <textarea class="form-control" rows="5" name="details" placeholder="Address & details"></textarea>
+          <input type="submit" value="book now" class="submit" required>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- book end -->
+
+
+
+
+<!-- package start -->
+
+<section class="package" id="package">
+  <div class="container">
+    <div class="main-txt">
+      <h1><span>P</span>ackages</h1>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+
+        <div class="card">
+          <img src="images/uk.png" alt="">
+          <div class="card-body">
+            <h3>United Kingdom</h3>
+            <p>The United Kingdom, a captivating blend of history and modernity, promises a journey like no other. From the regal splendor of Buckingham Palace to the wild beauty of the Scottish Highlands, this island nation is a treasure trove of diverse landscapes and cultures.</p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>price: <strong>30k</strong></h6>
+            <a href="#book">book now</a>
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+  
+        <div class="card">
+          <img src="images/italy.png" alt="">
+          <div class="card-body">
+            <h3>Italy</h3>
+            <p>Italy, a land of timeless elegance and unparalleled charm, invites you on a journey like no other.  every corner holds a piece of history and a dash of artistry
+              .Italian culture as you savor mouthwatering cuisine, sip velvety wines, and wander through quaint cobblestone streets.</p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6>price: <strong>45k</strong></h6>
+            <a href="#book">book now</a>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 py-3 py-md-0">
+  
+        <div class="card">
+          <img src="images/france.png" alt="">
+          <div class="card-body">
+            <h3>France</h3>
+            <p>Nestled in the heart of Europe, France beckons with its enchanting blend of history, art, and joie de vivre. From the iconic Eiffel Tower in the romantic city of Paris to the sun-kissed vineyards of Bordeaux, every corner of this country tells a story.</p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6>price: <strong>40k</strong></h6>
+            <a href="#book">book now</a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+
+        <div class="card">
+          <img src="images/germany.png" alt="">
+          <div class="card-body">
+            <h3>Germany</h3>
+            <p>Germany, a land of captivating contrasts, effortlessly blends old-world charm with cutting-edge modernity. From the medieval streets of Rothenburg to the gleaming skyscrapers of Frankfurt, this nation enthralls every traveler.</p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6>price: <strong>65k</strong></h6>
+            <a href="#book">book now</a>
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+  
+        <div class="card">
+          <img src="images/us.png" alt="">
+          <div class="card-body">
+            <h3>United States</h3>
+            <p>The United States, a land of boundless diversity, offers a tapestry of experiences for every traveler. From the glittering skyscrapers of New York City to the rugged grandeur of the Grand Canyon, the USA is a country of contrasts and extremes.</p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6>price: <strong>70k</strong></h6>
+            <a href="#book">book now</a>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4 py-3 py-md-0">
+  
+        <div class="card">
+          <img src="images/india.png" alt="">
+          <div class="card-body">
+            <h3>India</h3>
+            <p>India, a land of kaleidoscopic beauty and rich cultural tapestry. 
+              From the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa,
+              Explore the opulent history of Rajasthan, where ancient forts and palaces whisper tales of bygone eras. 
+            </p>
+            <p></p>
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <h6>price: <strong>50k</strong></h6>
+            <a href="#book">book now</a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- package end -->
+
+
+
+
+<!-- services start -->
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="main-txt">
+      <h1><span>S</span>ervices</h1>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fas fa-hotel"></i>
+          <div class="card-body">
+            <h3>Affordable Hotal</h3>
+            <p>Discover comfort, luxury, and convenience with our exceptional hotel booking services.we handpick a selection of top-rated accommodations to ensure your stay is nothing short of extraordinary. </p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fas fa-utensils"></i>
+          <div class="card-body">
+            <h3>Food and Drinks</h3>
+            <p>Embark on a gastronomic journey with as we bring you a delightful fusion of flavors from around the world. Our culinary experiences are crafted to satisfy even the most discerning palates </p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fas fa-bullhorn"></i>
+          <div class="card-body">
+            <h3>Safty Guide</h3>
+            <p>your safety and well-being are our top priorities. We have implemented rigorous measures to ensure that every aspect of your journey is secure and worry-free. Here's how we prioritize your safety. </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fas fa-globe-asia"></i>
+          <div class="card-body">
+            <h3>Around The World</h3>
+            <p>Embark on a seamless voyage around the world with our exceptional travel agency services.
+               We specialize in curating unforgettable journeys to destinations spanning continents and cultures.
+               Let us be your compass in discovering the world's wonders</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fas fa-plane"></i>
+          <div class="card-body">
+            <h3>Fastest Travel</h3>
+            <p>Fast Travel is not just a travel agency; we're your passport to seamless, unforgettable journeys. With a commitment to efficiency and excellence, we specialize in crafting expedited travel experiences tailored to your preferences </p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <i class="fas fa-hiking"></i>
+          <div class="card-body">
+            <h3>Adventures</h3>
+            <p>Embark on a journey with our adventure-focused travel agency, where ordinary vacations are transformed into extraordinary expeditions. We specialize in crafting adrenaline-pumping experiences for thrill-seekers and nature enthusiasts</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- services End -->
+
+
+
+<!-- gallery start -->
+
+<section class="gallary" id="gallary">
+  <div class="container">
+    <div class="main-txt">
+      <h1><span>G</span>allary</h1>
+    </div>
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g1.png" alt="" height="230px">
+
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g2.png" alt="" height="230px">
+
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g3.png" alt="" height="230px">
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g4.png" alt="" height="230px">
+
+        </div>
+      </div>
+
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g5.png" alt="" height="230px">
+
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="images/g6.png" alt="" height="230px">
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- gallery end -->
+
+
+
+
+<!-- about start -->
+
+<section class="about"  id="about">
+  <div class="container">
+    <div class="main-txt">
+      <h1>About <span>Us</span></h1>
+    </div>  
+
+    <div class="row" style="margin-top: 50px;">
+
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="images/about-img.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-6 py-3 py-md-0">
+        <h2>How Travel Agency Work</h2>
+        <p>we believe that every journey is an opportunity to discover, learn, and create unforgettable memories.
+           Established with a passion for exploration,
+           we are dedicated to curating exceptional travel experiences that inspire and delight. <br>
+           Our mission is to connect travelers with the world's most captivating destinations, 
+           providing them with seamless and enriching adventures. We strive to offer a diverse range of options,
+           from vibrant urban escapades to serene natural wonders, ensuring there's something for every type of explorer.        </p>
+        <p></p>
+        <button id="about-btn">Read More...</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about end -->
+
+
+
+<!-- footer start -->
+
+<footer id="footer">
+  <h1><span>T</span>ravel</h1>
+  <p>We're excited to be a part of your travel journey. Contact our dedicated team today to start planning your 
+    next adventure. Let's turn your travel dreams into reality!   </p>
+  <div class="social-links">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+     <div class="credit">
+      <p>Designed By Sanjay S Kumar</p>
+     </div>   
+</footer>
+
+<!-- footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+
+
+<!-- 
+
+
+
+
+
+   javascript 
+    <script>
+      function validate(){
+        var email=document.getElementById("email").value;
+        var reg= /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+        var result= reg.test(email)
+
+        if(result==false){
+          alert("invalid Email id");
+          return false;
+        }
+      }
+    </script>
+    javascript -->
